@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --SoftBlue: hsl(231, 69%, 60%);
+    --SoftRed: hsl(0, 94%, 66%);
+    --GrayishBlue: hsl(229, 8%, 60%);
+    --VeryDarkBlue: hsl(229, 31%, 21%);
+    
+}
+img{
+    max-width: 100%;
+}
+button{
+    border: none;
+}
+.ham{
+    display: none;
+}
+.navOne{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+   background-color: aliceblue;
+   height: 6vh;
+}
+
+.navRight a{
+    text-decoration: none;
+    color: var(--GrayishBlue);
+    padding-left: 40px;
+}
+.buttonRed{
+    color: white;
+    background-color: var(--SoftRed);
+    height: 30px;
+    width: 80px;
+    margin-left: 40px;
+    border-radius: 4px;
+}
+.sectionOne{
+    display: flex;
+    flex: 1 ;
+    margin-top: 80px;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.sectionOneLift{
+    padding-left:10% ;
+}
+h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.sectionOneText{
+    color: var(--GrayishBlue);
+    padding-bottom: 20px;
+    width: 80%;
+}
+.buttonPur{
+    color: white;
+    background-color: var(--SoftBlue);
+    height: 30px;
+    border-radius: 4px;
+   font-size: 14px;
+   padding-left: 4%;
+   padding-right: 4%;
+
+   
+}
+.buttonWhite{
+    color: var(--VeryDarkBlue);
+    height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.sectionTwo ,.sectionThree,.sectionFour{
+    text-align: center;
+    margin-top: 60px;
+}
+.sectionTwoText ,.sectionThreeText,.sectionFourText{
+    color: var(--GrayishBlue);
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    
+}
+.navTwo{
+    display: flex;
+   width: 50%;
+   margin-left: 25%;
+   border-bottom: solid 2px var(--GrayishBlue) ;
+   justify-content: space-between;
+   margin-top: 40px;
+
+}
+.navTabOne , .navTabTwo , .navTabThree{
+    color: var(--GrayishBlue);
+    height: 30px;
+    cursor: pointer;
+}
+.navTabOne:hover{
+    border-bottom: solid 2px var(--SoftRed) ;
+    color: var(--SoftRed);
+}
+.navTabTwo:hover{
+    border-bottom: solid 2px var(--SoftRed) ;
+    color: var(--SoftRed);
+}
+.navTabThree:hover{
+    border-bottom: solid 2px var(--SoftRed) ;
+    color: var(--SoftRed);
+}
+.tabOne ,.tabTwo ,.tabThree{
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    flex: 1;
+    width: 80%;
+    margin-left: 20%;
+}
+.tabTwo,.tabThree{
+    display: none;
+}
+.tabOneImg ,.tabTwoImg ,.tabThreeImg{
+    padding-left: 10%;
+}
+.tabOneRight ,.tabTwoRight ,.tabThreeRight{
+    padding-left: 10%;
+    width: 60%;
+}
+h2{
+    padding-bottom: 20px;
+}
+.tabOneText , .tabTwoText ,.tabThreeText{
+    color: var(--GrayishBlue);
+    padding-bottom: 20px;
+    width: 50%;
+}
+.buttonPurTwo{
+    background-color: var(--SoftBlue);
+    color: white;
+    width: 80px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.browsers{
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.Chrome , .Firefox ,.Opera{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 4px;
+    width: 30%;
+  box-shadow:   2px 2px 2px 2px hsl(229deg 23% 81%);
+  height: 300px;
+}
+.Firefox{
+    margin-top: 50px;
+}
+.Opera{
+    margin-top:100px;
+}
+.buttonPurThree{
+    background-color: var(--SoftBlue);
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 12px;
+}
+.menu{
+    display:flex;
+    flex-direction: column;
+    margin-left: 25%;
+    width: 50%;
+    margin-top: 60px;
+   
+}
+.questionOne,.questionTwo,.questionThree,.questionFour{
+    border-top: solid 2px var(--GrayishBlue) ;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
+    flex-direction: row;
+    font-weight: bolder;
+    height: 4vh;
+    cursor: pointer;
+}
+.answerOne,.answerTwo,.answerThree,.answerFour{
+    display: none;
+}
+
+.questionOne:hover{    
+    color: red;
+
+}
+.questionTwo:hover{    
+    color: red;
+
+}
+.questionThree:hover{    
+    color: red;
+
+}
+.questionFour:hover{    
+    color: red;
+
+}
+.bottom{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--SoftBlue);
+    align-items: center;
+    height: 15vh;
+    color: white;
+}
+h4{
+    font-size: 22px;
+}
+input{
+    color:var(--GrayishBlue);
+    height: 30px;
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+}
+footer{
+    background-color: var(--VeryDarkBlue);
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.hamMenu{
+    height: 100vh;
+    background-color:rgb(47, 53, 79);
+    z-index: 5000;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity:0.9 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.hamSectionOne {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.close{
+    height: 80%;
+
+}
+.hamMenu a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    border-top: solid 1px var(--GrayishBlue);
+    width: 100%;
+    padding-top: 20px;
+}
+.hamLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
+    margin-bottom: 50%;
+    text-align: center;
+    width: 80%;
+}
+.login{
+    border: solid 3px white;
+    margin-top: 20px;
+    padding-top: 5px;
+
+
+}
+@media(max-width:760px){
+  .navRight{
+      display: none;
+  }
+  .sectionOne{
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;  
+  }
+  .sectionOneText{
+      margin-left: 40px;
+  }
+  .buttonPur{
+   margin-right: 40px;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 40px;
+    font-size: 10px;
+  }
+  .buttonWhite{
+    
+    padding-left: 4%;
+    padding-right: 4%;
+        height: 40px;
+        font-size: 10px;
+  }
+  .navTwo{
+      display: flex;
+      flex-direction: column;
+      border:none;
+  }
+  .navTabOne ,.navTabTwo,.navTabThree{
+    border-bottom: solid 2px var(--GrayishBlue) ;
+    margin-bottom: 30px;
+    text-align: center;
+   
+  }
+.tabOne ,.tabTwo ,.tabThree{
+    flex-direction: column;
+    margin: 0;
+    width: inherit;
+}
+.tabOneRight ,.tabTwoRight ,.tabThreeRight{
+    padding-left: inherit; 
+    width: inherit; 
+    text-align: center;
+    margin-top: 40px;
+}
+.tabOneText , .tabTwoText ,.tabThreeText{
+    margin-left: 25%;
+}
+.tabOne .buttonPurTwo{
+    display: none;
+}
+.tabTwo .buttonPurTwo{
+    display: none;
+}
+.tabThree .buttonPurTwo{
+    display: none;
+}
+.tabOneImg{
+    padding:0;
+}
+.browsers{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Chrome ,.Firefox ,.Opera{
+    width: 70%;
+}
+.menu{
+    margin-left: 10%;
+    width: 80%;
+}
+.menu .buttonPurTwo{
+    width: 36%;
+    height: 40px;
+    margin-left: 32%;
+    margin-top: 60px;
+    border: none;
+}
+.questionOne{
+    border: none;
+    
+}
+.questionFour{
+    border-bottom: solid 2px var(--GrayishBlue);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact button{
+    width: inherit;
+    margin-left: 0;
+    margin-top: 10px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
+.ham{
+    display: flex;
+}
+}
